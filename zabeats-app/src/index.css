@@ -1,0 +1,16 @@
+/* Add this to hide all scrollbars in Electron */
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none; /* Prevents text highlighting while dragging sliders */
+}
+
+/* Logic for the nested Export menu */
+.has-submenu:hover div {
+  display: block !important;
+}
